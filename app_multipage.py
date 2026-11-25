@@ -50,7 +50,7 @@ def footer():
     st.markdown("---")
     st.markdown("<p class='small-muted' style='text-align:center;'>Kiswahili Sentiment AI · Academic NLP project · Fine-tuned AfroXLMR</p>", unsafe_allow_html=True)
 
-# -------------------- Page 1: Home --------------------
+# Page 1: Home 
 def home():
     hero("Kiswahili AI · NLP Mini-project", "Kiswahili Sentiment AI", "Exploring how artificial intelligence can interpret sentiment expressed in Kiswahili text.")
     st.markdown("### Can AI understand the sentiment behind Kiswahili text?")
@@ -73,7 +73,7 @@ def home():
     st.info("Use the navigation menu in the sidebar to explore each section.")
     footer()
 
-# -------------------- Page 2: About --------------------
+# Page 2: About 
 def about():
     hero("Project background", "About the project", "A small NLP project exploring sentiment classification for Kiswahili text.")
     st.markdown("## The problem and motivation")
@@ -100,7 +100,7 @@ def about():
     st.markdown("- **Base model:** `Davlan/afro-xlmr-base`\n- **Architecture:** multilingual transformer\n- **Fine-tuned model:** `nafissaoued/swahili-sentiment-afroxlmr`\n- **Application:** Streamlit and Transformers")
     footer()
 
-# -------------------- Page 3: Analyzer --------------------
+# Page 3: Analyzer 
 def analyzer():
     hero("Interactive demonstration", "Sentiment analyzer", "Try a sample or enter your own Kiswahili text to explore the model's predictions.")
     st.markdown("<p class='section-intro'>Choose an example or enter your own Kiswahili text to get started.</p>", unsafe_allow_html=True)
@@ -147,7 +147,7 @@ def analyzer():
         st.caption("Scores represent the model's outputs and are not guaranteed to be calibrated probabilities.")
     footer()
 
-# -------------------- Page 4: Evaluation --------------------
+# Page 4: Evaluation 
 def evaluation():
     hero("Testing and results", "Model evaluation", "A closer look at how the fine-tuned model performed on the held-out test set.")
     st.markdown("## Overall performance")

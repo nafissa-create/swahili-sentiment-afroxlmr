@@ -58,8 +58,6 @@ All numbers below are on the untouched **test set** (748 tweets). The main metri
 | TF-IDF + logistic regression | 0.463 | 0.54 | 0.30 | 0.63 | 0.45 |
 | **AfroXLMR-base fine-tuned (seed 42)** | **0.585** | 0.62 | 0.59 | 0.70 | 0.46 |
 
-**Multiple seeds:** [fill in: mean and standard deviation of macro F1 over N seeds. Delete this line if the multi-seed run was not done.]
-
 Confusion matrix, seed 42 (rows = true class, columns = predicted class):
 
 | | pred negative | pred neutral | pred positive |
@@ -86,8 +84,6 @@ streamlit run app.py
 ```
 
 The first analysis downloads the model (about 1.1 GB); later runs use the local cache.
-
-[Add screenshots here, for example `![demo](screenshots/demo1.png)`]
 
 Using the model directly in Python:
 

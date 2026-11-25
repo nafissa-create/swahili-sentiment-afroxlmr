@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide",
 )
 
-# ----------------------------- Styling --------------------------------------
+# Styling
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
@@ -32,7 +32,7 @@ hr { border-color: #e4ebe7; }
 </style>
 """, unsafe_allow_html=True)
 
-# ----------------------------- Model ---------------------------------------
+# Model 
 @st.cache_resource(show_spinner="Loading the sentiment model… the first load may take a moment.")
 def load_model():
     return pipeline("text-classification", model=MODEL_ID, top_k=None)
@@ -49,7 +49,7 @@ LABEL_META = {
     "neutral": {"emoji": "😐", "color": "#657b83", "description": "The text is predicted to express a neutral sentiment."},
 }
 
-# ----------------------------- Header --------------------------------------
+# Header
 st.markdown("""
 <div class="hero">
   <div class="hero-kicker">Kiswahili AI · NLP Project</div>
@@ -59,7 +59,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# ----------------------------- Analyzer ------------------------------------
+# Analyzer 
 st.markdown("### Sentiment analyzer")
 st.markdown("<p class='small-muted'>Enter a Kiswahili sentence or choose an example to get started.</p>", unsafe_allow_html=True)
 
@@ -140,7 +140,7 @@ if results:
     st.bar_chart(score_data, y_label="Score", horizontal=True)
     st.caption("These are model scores, not guaranteed calibrated probabilities. The model can make mistakes.")
 
-# ----------------------------- Project info --------------------------------
+# Project info 
 st.markdown("---")
 tab_analyzer, tab_about, tab_performance, tab_limitations = st.tabs(["How to use", "About the project", "Model performance", "Limitations"])
 

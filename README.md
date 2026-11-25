@@ -2,8 +2,9 @@
 
 Mini project for AI Applications. We fine-tune a pretrained multilingual model to classify Kiswahili tweets as **positive**, **negative** or **neutral**, and provide a small web app to try it.
 
-- **Group members:** [names]
-- **Course / institution:** [course], Strathmore University
+- **Group members:** Wendpouire Nafissa & Vunabandi Fabiola
+
+- **Course / institution:** Bsc Satistics and Data science, Strathmore University
 - **Trained model (Hugging Face):** https://huggingface.co/nafissaoued/swahili-sentiment-afroxlmr
 - **Code and data:** this repository
 
